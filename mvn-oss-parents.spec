@@ -4,7 +4,7 @@
 #
 Name     : mvn-oss-parents
 Version  : 38
-Release  : 11
+Release  : 12
 URL      : https://github.com/sonatype/oss-parents/archive/forge-parent-38.tar.gz
 Source0  : https://github.com/sonatype/oss-parents/archive/forge-parent-38.tar.gz
 Source1  : https://repo.maven.apache.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom
@@ -27,20 +27,21 @@ Source17  : https://repo1.maven.org/maven2/org/sonatype/forge/forge-parent/3/for
 Source18  : https://repo1.maven.org/maven2/org/sonatype/forge/forge-parent/4/forge-parent-4.pom
 Source19  : https://repo1.maven.org/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom
 Source20  : https://repo1.maven.org/maven2/org/sonatype/forge/forge-parent/6/forge-parent-6.pom
-Source21  : https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/5/oss-parent-5.pom
-Source22  : https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/6/oss-parent-6.pom
+Source21  : https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/3/oss-parent-3.pom
+Source22  : https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/5/oss-parent-5.pom
 Source23  : https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/6/oss-parent-6.pom
-Source24  : https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+Source24  : https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/6/oss-parent-6.pom
 Source25  : https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
-Source26  : https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+Source26  : https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
 Source27  : https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
-Source28  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/10/spice-parent-10.pom
-Source29  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
-Source30  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/15/spice-parent-15.pom
-Source31  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/16/spice-parent-16.pom
-Source32  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
-Source33  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/18/spice-parent-18.pom
-Source34  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/20/spice-parent-20.pom
+Source28  : https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+Source29  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/10/spice-parent-10.pom
+Source30  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
+Source31  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/15/spice-parent-15.pom
+Source32  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/16/spice-parent-16.pom
+Source33  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
+Source34  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/18/spice-parent-18.pom
+Source35  : https://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/20/spice-parent-20.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -122,47 +123,50 @@ cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/forge/for
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/forge/forge-parent/6
 cp %{SOURCE20} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/forge/forge-parent/6/forge-parent-6.pom
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/5
-cp %{SOURCE21} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/5/oss-parent-5.pom
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/3
+cp %{SOURCE21} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/3/oss-parent-3.pom
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/6
-cp %{SOURCE22} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/6/oss-parent-6.pom
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/5
+cp %{SOURCE22} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/5/oss-parent-5.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/6
 cp %{SOURCE23} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/6/oss-parent-6.pom
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/7
-cp %{SOURCE24} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/6
+cp %{SOURCE24} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/6/oss-parent-6.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/7
 cp %{SOURCE25} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/9
-cp %{SOURCE26} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/7
+cp %{SOURCE26} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/9
 cp %{SOURCE27} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/9
+cp %{SOURCE28} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/10
-cp %{SOURCE28} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/10/spice-parent-10.pom
+cp %{SOURCE29} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/10/spice-parent-10.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/12
-cp %{SOURCE29} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
+cp %{SOURCE30} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/15
-cp %{SOURCE30} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/15/spice-parent-15.pom
+cp %{SOURCE31} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/15/spice-parent-15.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/16
-cp %{SOURCE31} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/16/spice-parent-16.pom
+cp %{SOURCE32} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/16/spice-parent-16.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/17
-cp %{SOURCE32} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
+cp %{SOURCE33} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/18
-cp %{SOURCE33} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/18/spice-parent-18.pom
+cp %{SOURCE34} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/18/spice-parent-18.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/20
-cp %{SOURCE34} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/20/spice-parent-20.pom
+cp %{SOURCE35} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spice-parent/20/spice-parent-20.pom
 
 
 %files
@@ -190,6 +194,7 @@ cp %{SOURCE34} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/spice/spi
 /usr/share/java/.m2/repository/org/sonatype/forge/forge-parent/4/forge-parent-4.pom
 /usr/share/java/.m2/repository/org/sonatype/forge/forge-parent/5/forge-parent-5.pom
 /usr/share/java/.m2/repository/org/sonatype/forge/forge-parent/6/forge-parent-6.pom
+/usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/3/oss-parent-3.pom
 /usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/5/oss-parent-5.pom
 /usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/6/oss-parent-6.pom
 /usr/share/java/.m2/repository/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
