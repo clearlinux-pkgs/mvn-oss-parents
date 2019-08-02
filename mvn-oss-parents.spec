@@ -4,7 +4,7 @@
 #
 Name     : mvn-oss-parents
 Version  : 38
-Release  : 10
+Release  : 11
 URL      : https://github.com/sonatype/oss-parents/archive/forge-parent-38.tar.gz
 Source0  : https://github.com/sonatype/oss-parents/archive/forge-parent-38.tar.gz
 Source1  : https://repo.maven.apache.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom
